@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cart checkout() should return an object with total and a list of items 1`] = `
+Object {
+  "items": Array [
+    Object {
+      "product": Object {
+        "name": "Adizero Running t-shirt - men",
+        "price": 35388,
+      },
+      "quantity": 2,
+    },
+    Object {
+      "product": Object {
+        "name": "Adizero Running t-shirt - women",
+        "price": 41872,
+      },
+      "quantity": 3,
+    },
+  ],
+  "total": 196392,
+}
+`;
+
+exports[`Cart summary() should return all items from the cart when summary() is called 1`] = `
+Object {
+  "formattedTotal": "R$707.76",
+  "items": Array [
+    Object {
+      "product": Object {
+        "name": "Adizero Running t-shirt - men",
+        "price": 35388,
+      },
+      "quantity": 2,
+    },
+  ],
+  "total": 70776,
+}
+`;
