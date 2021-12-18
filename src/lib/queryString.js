@@ -5,11 +5,11 @@ const formatObjectToQueryString = ([key, value]) => {
   return `${key}=${value}`;
 };
 
-module.exports.queryString = obj => {
+export function queryString(obj) {
   return Object.entries(obj).map(formatObjectToQueryString).join('&');
-};
+}
 
-module.exports.parse = queryString => {
+export function parse(queryString) {
   const result = queryString.split('&').map(item => {
     let [key, value] = item.split('=');
 
@@ -21,4 +21,4 @@ module.exports.parse = queryString => {
   });
 
   return Object.fromEntries(result);
-};
+}
